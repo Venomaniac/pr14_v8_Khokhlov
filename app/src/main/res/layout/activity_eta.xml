@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MediumSeaGreen"
+    android:padding="20dp">
+<TextView
+    android:id="@+id/editTask"
+    android:layout_width="300dp"
+    android:layout_height="70dp"
+    android:text="Изменить задачу"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:layout_marginBottom="24dp"
+    android:paddingTop="17dp"
+    android:paddingLeft="15dp"/>
+    <ImageView
+        android:id="@+id/arrowPic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/editTask"
+        android:src="@drawable/arrow" />
+    <TextView
+        android:id="@+id/titleTask"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/editTask"
+        android:background="@drawable/rounded_status_bg"
+        android:layout_marginBottom="20dp"
+        android:text="Заголовок задачи"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_below="@id/titleTask"
+        android:id="@+id/alarmTime"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="16:30"
+        android:textSize="18sp"
+        android:textColor="@color/textGray"
+        android:background="@drawable/rounded_status_bg"/>
+    <TextView
+        android:layout_toRightOf="@id/alarmTime"
+        android:id="@+id/alarmDate"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="14.01.2021"
+        android:textSize="18sp"
+        android:textColor="@color/textGray"
+        android:background="@drawable/rounded_status_bg"
+        android:layout_below="@id/titleTask"
+        android:layout_marginLeft="71dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:id="@+id/Task"
+        android:layout_below="@id/alarmTime"
+        android:background="@drawable/rounded_status_bg"
+        android:layout_marginTop="20dp"
+        android:text="Описание задачи"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btnDelTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Task"
+        android:layout_marginTop="160dp"
+        android:background="@color/primaryRed"
+        android:text="Удалить задачу"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelTask"
+        android:layout_marginTop="12dp"
+        android:background="@color/palegreen"
+        android:text="Записать задачу"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

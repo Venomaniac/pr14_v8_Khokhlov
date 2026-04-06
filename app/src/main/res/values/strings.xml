@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">pr14_v8_Khokhlov</string>
+    <string name="profile_image">Profile image</string>
+    <string name="user_name_default">Профиль пользователя</string>
+    <string name="not_logged_in">Вход не выполнен</string>
+    <string name="login">Войти</string>
+    <string name="register">Регистрация</string>
+    <string name="monday">Понедельник</string>
+    <string name="tuesday">Вторник</string>
+    <string name="wednesday">Среда</string>
+    <string name="thursday">Четверг</string>
+    <string name="friday">Пятница</string>
+    <string name="saturday">Суббота</string>
+    <string name="sunday">Воскресенье</string>
+</resources>

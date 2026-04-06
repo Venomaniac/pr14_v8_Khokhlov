@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MediumSeaGreen"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/addAlarm"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Добавить будильник"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"
+        android:paddingTop="17dp"
+        android:paddingLeft="15dp"/>
+
+        <ImageView
+            android:id="@+id/arrowPic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/addAlarm"
+            android:src="@drawable/arrow" />
+
+        <LinearLayout
+            android:id="@+id/timeEdit"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+            android:layout_below="@id/addAlarm">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Время:"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/alarmTime"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="16:30"
+            android:textSize="18sp"
+            android:textColor="@color/textGray"
+            android:background="@drawable/rounded_status_bg"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dateEdit"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/addAlarm"
+        android:layout_toRightOf="@id/timeEdit">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="Дата:"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:id="@+id/alarmDate"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:text="14.01.2021"
+            android:textSize="18sp"
+            android:textColor="@color/textGray"
+            android:background="@drawable/rounded_status_bg"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_below="@id/timeEdit">
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerGray"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Повторять каждый"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp" />
+    <CheckBox
+        android:id="@+id/checkMonday"
+        android:buttonTint="@color/darkorange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/monday"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp"/>
+    <CheckBox
+        android:id="@+id/checkTuesday"
+        android:buttonTint="@color/darkorange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tuesday"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkWednesday"
+        android:buttonTint="@color/darkorange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wednesday"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkThursday"
+        android:buttonTint="@color/darkorange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thursday"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkFriday"
+        android:buttonTint="@color/darkorange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/friday"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkSaturday"
+        android:layout_width="match_parent"
+        android:buttonTint="@color/darkorange"
+        android:layout_height="wrap_content"
+        android:text="@string/saturday"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp" />
+
+    <CheckBox
+        android:id="@+id/checkSunday"
+        android:layout_width="match_parent"
+        android:buttonTint="@color/darkorange"
+        android:layout_height="wrap_content"
+        android:text="@string/sunday"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:layout_marginBottom="32dp" />
+    <Button
+        android:id="@+id/btnCreateAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Создать будильник"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/palegreen"
+        android:elevation="2dp" />
+    </LinearLayout>
+</RelativeLayout>
